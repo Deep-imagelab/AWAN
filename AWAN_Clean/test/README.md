@@ -4,6 +4,10 @@
 - hdf5storage 
 - opencv-python 
 
+# Pre-trained models
+- Download pre-trained models in the link [Google Drive](https://drive.google.com/drive/folders/1njWoW5PmJVvLGbV362ioucOk0OEhjkAJ?usp=sharing)
+- After downloading it, please put them to right folders.
+
 # Results of validation dataset
 - The validation images are in the NTIRE2020_Validation_Clean folder.
 - The valid_model1.py, valid_model2.py, valid_model3.py and valid_model4.py generate the reconstructed hyperspectral images respectively.
