@@ -24,3 +24,6 @@ Jiaojiao Li, Chaoxiong Wu, Rui Song, Yunsong Li and Fei Liu. [Adaptive Weighted 
       month = {June},  
       year = {2020}  
     }
+    
+## CVPRW poster
+![](./Figures/Poster.pdf)
