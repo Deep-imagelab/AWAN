@@ -6,6 +6,14 @@ Jiaojiao Li, Chaoxiong Wu, Rui Song, Yunsong Li and Fei Liu. [Adaptive Weighted 
 - Network architecture of the proposed adaptive weighted attention network (AWAN).
 ![](./Figures/AWAN.jpg)
 
+## AWCA module
+- Diagram of adaptive weighted channel attention (AWCA) module.
+![](./Figures/AWCA.jpg)
+
+## PSNL module
+- Diagram of patch-level second-order non-local (PSNL) module.
+![](./Figures/PSNL.jpg)
+
 ## Citation
 - If the the work or the code is helpful, please cite the paper:
 
