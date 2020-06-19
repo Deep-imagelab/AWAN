@@ -20,5 +20,5 @@
 - And then, the test_ensemble.py will utilize the four results to generate the final results.
 - The final reconstructed results are shown in the *final_test_results* folder.
 
-# Evaluation criterion
+# Evaluation functions
 - The official scoring codes can be found [NTIRE2020_Spectral](https://github.com/boazarad/NTIRE2020_spectral).
