@@ -9,9 +9,9 @@ Jiaojiao Li, Chaoxiong Wu, Rui Song, Yunsong Li and Fei Liu. [Adaptive Weighted 
 - If the the work or the code is helpful, please cite the paper:
 
     @InProceedings{Li_2020_CVPR_Workshops,  
-    author = {Li, Jiaojiao and Wu, Chaoxiong and Song, Rui and Li, Yunsong and Liu, Fei},  
-    title = {Adaptive Weighted Attention Network With Camera Spectral Sensitivity Prior for Spectral Reconstruction From RGB Images},  
-    booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},  
-    month = {June},  
-    year = {2020}  
+      author = {Li, Jiaojiao and Wu, Chaoxiong and Song, Rui and Li, Yunsong and Liu, Fei},  
+      title = {Adaptive Weighted Attention Network With Camera Spectral Sensitivity Prior for Spectral Reconstruction From RGB Images},  
+      booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},  
+      month = {June},  
+      year = {2020}  
     }
