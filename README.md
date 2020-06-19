@@ -26,4 +26,4 @@ Jiaojiao Li, Chaoxiong Wu, Rui Song, Yunsong Li and Fei Liu. [Adaptive Weighted 
     }
     
 ## CVPRW poster
-![](./Figures/Poster.pdf)
+![](./Figures/Poster.png)
