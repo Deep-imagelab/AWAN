@@ -4,6 +4,7 @@ Jiaojiao Li, Chaoxiong Wu, Rui Song, Yunsong Li and Fei Liu. [Adaptive Weighted 
 
 ## AWAN framework
 - Network architecture of the proposed adaptive weighted attention network (AWAN).
+![]:/Figures/AWAN.jpg
 
 ## Citation
 - If the the work or the code is helpful, please cite the paper:
