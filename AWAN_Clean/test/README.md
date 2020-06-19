@@ -5,7 +5,7 @@
 - opencv-python 
 
 # Pre-trained models
-- Download pre-trained models in the link [Google Drive](https://drive.google.com/drive/folders/1njWoW5PmJVvLGbV362ioucOk0OEhjkAJ?usp=sharing)
+- Download pre-trained models in the link [Google Drive](https://drive.google.com/drive/folders/1njWoW5PmJVvLGbV362ioucOk0OEhjkAJ?usp=sharing).
 - After downloading it, please put them to right folders.
 
 # Results of validation dataset
