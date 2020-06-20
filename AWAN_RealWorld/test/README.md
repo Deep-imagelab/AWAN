@@ -13,6 +13,8 @@
 - The valid_model1.py, valid_model2.py, valid_model3.py and valid_model4.py generate the reconstructed hyperspectral images respectively.
 - And then, the valid_ensemble.py will utilize the four results to generate the final results.
 - The final reconstructed results are shown in the *final_valid_results* folder.
+- Download the single-model results from [Single-model](https://drive.google.com/drive/folders/1mZeW3YIgOd_TID9GuW22G6DOBpR25QaT?usp=sharing)
+- Download the model-ensembled results from [Model-ensembled](https://drive.google.com/drive/folders/1fJnuxSmf_SaaPYtZmrrBhSY4vH45xBbZ?usp=sharing)
 
 # Results of test dataset
 - The test images are in the *NTIRE2020_Test_RealWorld* folder.
