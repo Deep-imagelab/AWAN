@@ -7,4 +7,9 @@
     --ARAD_HS_0002.mat  
     ......  
     --ARAD_HS_0450.mat  
+    *NTIRE2020/NTIRE2020_Train_Clean*  
+    --ARAD_HS_0001_clean.png  
+    --ARAD_HS_0002_clean.png  
+    ......  
+    --ARAD_HS_0450_clean.png  
 
