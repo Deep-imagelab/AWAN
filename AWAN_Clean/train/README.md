@@ -14,4 +14,16 @@
     --ARAD_HS_0002_clean.png  
     ......  
     --ARAD_HS_0450_clean.png  
+    
+    *NTIRE2020/NTIRE2020_Validation_Spectral*  
+    --ARAD_HS_0451.mat  
+    --ARAD_HS_0453.mat  
+    ......  
+    --ARAD_HS_0465.mat  
+    
+    *NTIRE2020/NTIRE2020_Validation_Clean*  
+    --ARAD_HS_0451_clean.png  
+    --ARAD_HS_0453_clean.png  
+    ......  
+    --ARAD_HS_0465_clean.png  
 
