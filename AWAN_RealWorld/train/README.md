@@ -9,11 +9,11 @@
     ......  
     --ARAD_HS_0450.mat  
     
-    *NTIRE2020/NTIRE2020_Train_Clean*  
-    --ARAD_HS_0001_clean.png  
-    --ARAD_HS_0002_clean.png  
+    *NTIRE2020/NTIRE2020_Train_RealWorld*  
+    --ARAD_HS_0001_RealWorld.png  
+    --ARAD_HS_0002_RealWorld.png  
     ......  
-    --ARAD_HS_0450_clean.png  
+    --ARAD_HS_0450_RealWorld.png  
     
     *NTIRE2020/NTIRE2020_Validation_Spectral*  
     --ARAD_HS_0451.mat  
@@ -21,11 +21,11 @@
     ......  
     --ARAD_HS_0465.mat  
     
-    *NTIRE2020/NTIRE2020_Validation_Clean*  
-    --ARAD_HS_0451_clean.png  
-    --ARAD_HS_0453_clean.png  
+    *NTIRE2020/NTIRE2020_Validation_RealWorld*  
+    --ARAD_HS_0451_RealWorld.png  
+    --ARAD_HS_0453_RealWorld.png  
     ......  
-    --ARAD_HS_0465_clean.png  
+    --ARAD_HS_0465_RealWorld.png  
     
 # Train the model
 - If you are running the code for the first time, remember data pre-processing.
