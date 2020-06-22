@@ -64,9 +64,6 @@ def process_data(patch_size, stride, mode):
         filenames_rgb.sort()
         # for k in range(1):  # make small dataset
         for k in range(len(filenames_hyper)):
-            if k == 339:
-                break
-            # continue
             print([filenames_hyper[k], filenames_rgb[k]])
             # load hyperspectral image
             mat = h5py.File(filenames_hyper[k], 'r')
