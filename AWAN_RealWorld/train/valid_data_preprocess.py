@@ -12,7 +12,7 @@ import hdf5storage
 parser = argparse.ArgumentParser(description="SpectralSR")
 parser.add_argument("--data_path", type=str, default='../../NTIRE2020', help="data path")
 parser.add_argument("--patch_size", type=int, default=64, help="data patch size")
-parser.add_argument("--stride", type=int, default=64, help="data patch stride")
+parser.add_argument("--stride", type=int, default=32, help="data patch stride")
 parser.add_argument("--valid_data_path", type=str, default='./Dataset/Valid', help="preprocess_data_path")
 
 opt = parser.parse_args()
@@ -59,9 +59,9 @@ def process_data(patch_size, stride, mode):
             print([filenames_hyper[k], filenames_rgb[k]])
             # load hyperspectral image
             mat = h5py.File(filenames_hyper[k], 'r')
-            hyper = np.float32(np.array(mat['rad']))
+            hyper = np.float32(np.array(mat['cube']))
             hyper = np.transpose(hyper, [0, 2, 1])
-            hyper = normalize(hyper, max_val=4095., min_val=0.)
+            hyper = normalize(hyper, max_val=1., min_val=0.)
             # load rgb image
             rgb = cv2.imread(filenames_rgb[k])  # imread -> BGR model
             rgb = cv2.cvtColor(rgb, cv2.COLOR_BGR2RGB)
