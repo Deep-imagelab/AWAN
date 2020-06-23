@@ -12,7 +12,7 @@ import hdf5storage
 parser = argparse.ArgumentParser(description="SpectralSR")
 parser.add_argument("--data_path", type=str, default='../../NTIRE2020', help="data path")
 parser.add_argument("--patch_size", type=int, default=64, help="data patch size")
-parser.add_argument("--stride", type=int, default=64, help="data patch stride")
+parser.add_argument("--stride", type=int, default=32, help="data patch stride")
 parser.add_argument("--valid_data_path", type=str, default='./Dataset/Valid', help="preprocess_data_path")
 
 opt = parser.parse_args()
