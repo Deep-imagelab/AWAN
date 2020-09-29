@@ -28,7 +28,7 @@
     --ARAD_HS_0465_RealWorld.jpg  
     
 # Train the model
-- If you are running the code for the first time, remember running data pre-processing firstly.
+- If you are running the code for the first time, remember to run data pre-processing firstly.
 
     python train_data_preprocess.py  
     python valid_data_preprocess.py  
