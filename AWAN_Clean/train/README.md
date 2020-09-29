@@ -28,7 +28,7 @@
     --ARAD_HS_0465_clean.png  
     
 # Train the model
-- If you are running the code for the first time, remember data pre-processing.
+- If you are running the code for the first time, remember running data pre-processing firstly.
 
     python train_data_preprocess.py  
     python valid_data_preprocess.py  
