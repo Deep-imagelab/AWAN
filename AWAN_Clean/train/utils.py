@@ -28,7 +28,7 @@ class AverageMeter(object):
 def initialize_logger(file_dir):
     logger = logging.getLogger()
     fhandler = logging.FileHandler(filename=file_dir, mode='a')
-    formatter = logging.Formatter('%(asctime)s - %(message)s',"%Y-%m-%d %H:%M:%S")
+    formatter = logging.Formatter('%(asctime)s - %(message)s', "%Y-%m-%d %H:%M:%S")
     fhandler.setFormatter(formatter)
     logger.addHandler(fhandler)
     logger.setLevel(logging.INFO)
@@ -37,12 +37,12 @@ def initialize_logger(file_dir):
 
 def save_checkpoint(model_path, epoch, iteration, model, optimizer):
     state = {
-            'epoch': epoch,
-            'iter': iteration,
-            'state_dict': model.state_dict(),
-            'optimizer': optimizer.state_dict(),
-            }
-    
+        'epoch': epoch,
+        'iter': iteration,
+        'state_dict': model.state_dict(),
+        'optimizer': optimizer.state_dict(),
+    }
+
     torch.save(state, os.path.join(model_path, 'net_%depoch.pth' % epoch))
 
 
@@ -50,10 +50,10 @@ def save_matv73(mat_name, var_name, var):
     hdf5storage.savemat(mat_name, {var_name: var}, format='7.3', store_python_metadata=True)
 
 
-def record_loss(loss_csv,epoch, iteration, epoch_time, lr, train_loss, test_loss):
+def record_loss(loss_csv, epoch, iteration, epoch_time, lr, train_loss, test_loss):
     """ Record many results."""
     loss_csv.write('{},{},{},{},{},{}\n'.format(epoch, iteration, epoch_time, lr, train_loss, test_loss))
-    loss_csv.flush()    
+    loss_csv.flush()
     loss_csv.close
 
 
@@ -87,17 +87,16 @@ class LossTrainCSS(nn.Module):
         cie_matrix = np.load(filtersPath)['filters']
         cie_matrix = torch.from_numpy(np.transpose(cie_matrix, [1, 0])).unsqueeze(-1).unsqueeze(-1).float()
         self.model_hs2rgb.weight.data = cie_matrix
+        self.model_hs2rgb.weight.requires_grad = False
 
     def forward(self, outputs, label, rgb_label):
         rrmse = self.mrae_loss(outputs, label)
         # hs2rgb
-        with torch.no_grad():
-            rgb_tensor = self.model_hs2rgb(outputs)
-            rgb_tensor = rgb_tensor / 255
-            rgb_tensor = torch.clamp(rgb_tensor, 0, 1) * 255
-            # rgb_tensor = torch.tensor(rgb_tensor, dtype=torch.uint8)
-            rgb_tensor = torch.tensor(rgb_tensor).byte().float()
-            rgb_tensor = rgb_tensor / 255
+        rgb_tensor = self.model_hs2rgb(outputs)
+        rgb_tensor = rgb_tensor / 255
+        rgb_tensor = torch.clamp(rgb_tensor, 0, 1) * 255
+        rgb_tensor = torch.tensor(rgb_tensor).byte().float()
+        rgb_tensor = rgb_tensor / 255
         rrmse_rgb = self.rgb_mrae_loss(rgb_tensor, rgb_label)
         return rrmse, rrmse_rgb
 
